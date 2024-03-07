@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logo/favicon_io/favicon-16x16.png">
+    <!-- <link rel="manifest" href="./assets/images/Logo/site.webmanifest"> -->
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Online Shop</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="nav-header">   
+                    <h3>Olivia Store</h3>
+
+                    <img class="store-icon" src="./assets/icons/android-chrome-512x512.svg" alt="">
+
+                    <button class="btn-submit signin-btn" onclick = "showSigninPage()"> 
+                        <i class="">Sign In</i>
+                    <button>
+
+                    <button class="btn-submit signup-btn" onclick = "showSignupPage()">
+                        <i>Sign Up</i>
+                    </button>
+
+                    <button class="btn-cart">
+                        <i class="bi bi-cart"></i>
+                    </button>
+
+                    <div class="search-bar">
+                        <button class="search-btn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <input type="text" placeholder="Search...">
+                    </div>
+
+                    <button class="nav-btn" id="nav-btn" type="button">
+                        <i class="bi bi-list-nested"></i>
+                    </button>
+                </div>
+
+                <ul class="nav-links" id="nav-links">
+                    <li>
+                        <a class="nav-link scroll-link" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link scroll-link" href="#products" id="allProLink">Products</a>
+                    </li>
+                    <li>
+                        <a class="nav-link scroll-link" href="#categories">Categories</a>
+                    </li>
+                    <li>
+                        <a class="nav-link scroll-link" href="#new-ones">What's New</a>
+                    </li>
+                    <li>
+                        <a class="nav-link scroll-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="banner">
+            <div class="banner-container">
+                <h1>Shop now!</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Sit amet aliquam id diam maecenas ultricies mi. Netus et malesuada fames ac turpis egestas maecenas.
+                </p>
+                <a href="#" class="btn btn-banner">ِDiscover</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-title">
+        <h2>On Sale</h2>
+        <div class="underline"></div>
+    </div>
+    
+    <section class="products-container" id="on-sale">
+        <!-- Product Cards will be inserted here -->
+    </section>
+
+    <button class="pre-btn"><img src="/assets/images/arrow.png" alt=""></button>
+    <button class="next-btn"><img src="/assets/images/arrow.png" alt=""></button>
+
+    <div class="section-title">
+        <h2>Best Selling</h2>
+        <div class="underline"></div>
+    </div>
+
+    <section class="products-container" id="high-rank">
+        <!-- Product Cards -->
+    </section>
+    <br>
+
+    <div class="section-title">
+        <h2>What's New</h2>
+        <div class="underline"></div>
+    </div>
+
+    <section class="products-container" id="new-ones">
+         <!-- Product Cards -->
+    </section>
+
+    <section class="products-container">
+        <div id="products">
+            <!-- Product Cards -->
+        </div>
+   </section>
+
+    <section class="section blog" id="collections">
+        <div class="section-title">
+            <h2>Collections</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="section-center blog-center">
+            <article class="card winters-outfit">
+                <div class="card-side card-front">
+                    <!-- Front Card -->
+                    <img src="./assets/images/products/collections/christmas-socks.jpg" alt="">
+                    <div class="card-info">
+                        <h4>Christmas Socks</h4>
+                        <p>
+                            Clothing
+                        </p>
+                        <div class="card-footer">
+                            <p>recently</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-side card-back">
+                    <!-- Back Card -->
+                    <button class="btn btn-see-more">See More</button>
+                </div>
+            </article>
+            
+            <article class="card winters-outfit">
+                <div class="card-side card-front">
+                    <!-- Front Card -->
+                    <img src="./assets/images/products/collections/winter's-vintage-outfit.jpg" alt="">
+                    <div class="card-info">
+                        <h4>Women's Vintage Cardigans</h4>
+                        <p>
+                            Clothing
+                        </p>
+                        <div class="card-footer">
+                            <p>recently</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-side card-back">
+                    <!-- Back Card -->
+                    <button class="btn btn-see-more">See More</button>
+                </div>     
+            </article>
+
+            <article class="card winter's-outfit">
+                <div class="card-side card-front">
+                    <!-- Front Card -->
+                    <img src="./assets/images/products/collections/cottage-core.jpg" alt="">
+                    <div class="card-info">
+                        <h4>Cottagecore Autumn's Outfits</h4>
+                        <p>
+                            Clothing
+                        </p>
+                        <div class="card-footer">
+                            <p>1 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-side card-back">
+                    <!-- Back Card -->
+                    <button class="btn btn-see-more">See More</button>
+                </div>     
+            </article>
+
+            <article class="card winter's-outfit">
+                <div class="card-side card-front">
+                    <!-- Front Card -->
+                    <img src="./assets/images/products/collections/Megoosta_Fashion-sunflower_outfit.jpg" alt="">
+                    <div class="card-info">
+                        <h4>Sunfloweral Outfits</h4>
+                        <p>
+                            Clothing
+                        </p>
+                        <div class="card-footer">
+                            <p>2 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-side card-back">
+                    <!-- Back Card -->
+                    <button class="btn btn-see-more">See More</button>
+                </div>     
+            </article>
+
+            <article class="card vintage-accessories">
+                <div class="card-side card-front">
+                    <!-- Front Card -->
+                    <img src="./assets/images/products/collections/LICHI -online fashion store _bel.png" alt="">
+                    <div class="card-info">
+                        <h4>Belted Mini Dresses</h4>
+                        <p>
+                            Women's Clothing
+                        </p>
+                        <div class="card-footer">
+                            <p>5 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-side card-back">
+                    <!-- Back Card -->
+                    <button class="btn btn-see-more">See More</button>
+                </div>     
+            </article>
+
+            <article class="card vintage-accessories">
+                <div class="card-side card-front">
+                    <!-- Front Card -->
+                    <img src="./assets/images/products/collections/premium_photo-vintage-accessorie.jpg" alt="">
+                    <div class="card-info">
+                        <h4>Vintage Accessories</h4>
+                        <p>
+                            Jewellery
+                        </p>
+                        <div class="card-footer">
+                            <p>7 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-side card-back">
+                    <!-- Back Card -->
+                    <button class="btn btn-see-more">See More</button>
+                </div>     
+            </article>
+
+        </div>
+    </section>
+
+    <!-- <section class="section collections" id="collections">
+        <div class="section-title">
+            <h2>Collections</h2>
+            <div class="underline"></div>
+            <p class="collections-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae id ullam corporis itaque quasi suscipit debitis? Esse eum officiis inventore quia enim, voluptates consequatur tenetur vero adipisci delectus distinctio facere.               </p>
+            </p>
+        </div>
+        
+        <div class="section-center collections-center">
+            <a href="#" class="collection-1">
+                <article class="collection">
+                    <img class="collection-img" src="./assets/images/products/" alt="collection-img">
+                    <div class="collection-info">
+                        <h4>Winter Collection</h4>
+                        <p>Clothing</p>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#" class="collection-2">
+                <article class="collection">
+                    <img class="collection-img" src="./assets/images/" alt="collection-img">
+                    <div class="collection-info">
+                        <h4>Women's Accessories</h4>
+                        <p>Jewellery</p>
+                    </div>
+                </article>
+            </a>
+        </div>    
+    </section> -->
+
+    <section class="section categories" id="categories">
+        <div class="section-title">
+            <h2>Categories</h2>
+            <div class="underline"></div>
+            <p class="categories-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae id ullam corporis itaque quasi suscipit debitis? Esse eum officiis inventore quia enim, voluptates consequatur tenetur vero adipisci delectus distinctio facere.               </p>
+            </p>
+        </div>
+        
+        <div class="section-center categories-center">
+            <a href="#" class="category-1">
+                <article class="category">
+                    <img class="category-img" src="./assets/images/products/categories/christopher-gower-electronics-un.jpg" alt="collection-img">
+                    <div class="category-info">
+                        <h4>Electronic</h4>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#" class="category-2">
+                <article class="category">
+                    <img class="category-img" src="./assets/images/products/categories/tessa-wilson-jewellery-unsplash.jpg" alt="collection-img">
+                    <div class="category-info">
+                        <h4>Jewellery</h4>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#" class="category-3">
+                <article class="category">
+                    <img class="category-img" src="./assets/images/products/categories/perry-merrity-ii-men's-clothing-unsplash.jpg" alt="collection-img">
+                    <div class="category-info">
+                        <h4>Men's Clothing</h4>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#" class="category-4">
+                <article class="category">
+                    <img class="category-img" src="./assets/images/products/categories/megan-women's-clothing-unsplash.jpg" alt="collection-img">
+                    <div class="category-info">
+                        <h4>Women's Clothing</h4>
+                    </div>
+                </article>
+            </a>
+        </div>    
+    </section>
+    
+    <footer class="footer" id="footer">
+        <!-- <ul class="social-icons">
+            <li>
+                <a href="#" class="social-icon">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social-icon">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social-icon">
+                    <i class="bi bi-telegram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social-icon">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social-icon">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+        </ul>
+
+        <p>&copy;
+            <span id="date"></span>
+        </p> -->
+
+        <div class="footer-content">
+            <img src="/assets/images/logo/transparent-online shop.png" class="logo" alt="">
+            <div class="footer-ul-container">
+                <ul class="category-jewelery">
+                    <li class="category-title">jewelery</li>
+                    <li><a href="" class="footer-link">Naga Gold & Silver</a></li>
+                    <li><a href="" class="footer-link">Solid Gold</a></li>
+                    <li><a href="" class="footer-link">White Gold</a></li>
+                    <li><a href="" class="footer-link">Rose Gold</a></li>
+                </ul>
+
+                <ul class="category-electronics">
+                    <li class="category-title">electronics</li>
+                    <li><a href="" class="footer-link">External Hard</a></li>
+                    <li><a href="" class="footer-link">Internal SSD</a></li>
+                    <li><a href="" class="footer-link">flash</a></li>
+                    <li><a href="" class="footer-link">Gaming Monitor</a></li>
+                </ul>
+
+                <ul class="category-clothes">
+                    <li class="category-title">men's clothing</li>
+                    <li><a href="#" class="footer-link">t-shirts</a></li>
+                    <li><a href="#" class="footer-link">jackets</a></li>
+                    <li><a href="#" class="footer-link">raincoats</a></li>
+                    <li><a href="#" class="footer-link">windbreaker</a></li>
+                    <li><a href="#" class="footer-link">short sleeves</a></li>
+                    <li><a href="#" class="footer-link">casuals</a></li>
+                    <li><a href="#" class="footer-link">backpack</a></li> 
+                </ul>
+
+                <ul class="category-clothes">
+                    <li class="category-title">women's clothing</li>
+                    <li><a href="#" class="footer-link">t-shirts</a></li>
+                    <li><a href="#" class="footer-link">jackets</a></li>
+                    <li><a href="#" class="footer-link">raincoats</a></li>
+                    <li><a href="#" class="footer-link">windbreaker</a></li>
+                    <li><a href="#" class="footer-link">short sleeves</a></li>
+                    <li><a href="#" class="footer-link">casuals</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-text">
+            <p class="footer-title">about company</p>
+            <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tempore ad suscipit, eos eius quisquam sed optio nisi quaerat fugiat ratione et vero maxime praesentium, architecto minima reiciendis iste quo deserunt assumenda alias ducimus. Ullam odit maxime id voluptates rerum tenetur corporis laboriosam! Cum error ipsum laborum tempore in rerum necessitatibus nostrum nobis modi! Debitis adipisci illum nemo aperiam sed, et accusamus ut officiis. Laborum illo exercitationem quo culpa reprehenderit excepturi distinctio tempore cupiditate praesentium nisi ut iusto, assumenda perferendis facilis voluptas autem fuga sunt ab debitis voluptatum harum eum. Asperiores, natus! Est deserunt incidunt quasi placeat omnis, itaque harum?</p>
+            <p class="info">support emails - help@Olivia.com, customersupport@Olivia.com</p>
+            <p class="info">telephone - 00000000000000000</p>  
+        </div>
+
+        <div class="footer-social-container">
+            <div>
+                <a href="#" class="social-link">&copy;terms & services</a>
+                <a href="#" class="social-link">privacy page</a>
+            </div>
+            <div>
+                <a href="#" class="social-link">instagram</a>
+                <a href="#" class="social-link">facebook</a>
+                <a href="#" class="social-link">twitter</a>
+            </div>
+        </div>
+        <p class="footer-credit">Olivia, Best comprehensive online store</p>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+    <script src="js/products.js" defer></script>
+</body>
+</html>
